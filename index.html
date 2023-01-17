@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>DojoWeather</h1>
+        <ul class="links">
+            <li><a href="#" onclick="alert('Loading weather report...')">Burbank</a> </li>
+            <li><a href="#" onclick="alert('Loading weather report...')">Chicago</a> </li>
+            <li><a href="#" onclick="alert('Loading weather report...')">Dallas</a> </li>
+        </ul>
+    </div>
+
+    <div class="info">
+        <h1>San Jose</h1>
+        <form action="#">
+            <label for="temp">show temperature in </label>
+            <select name="temp" id="temp" onchange="changet(this)">
+                <option id="option1" value="celcuis">°C</option>
+                <option id="option2" value="fahrenheit">°F</option>
+            </select>
+        </form>
+    </div>
+    
+    <hr>
+
+    <div class="main">
+
+        <div class="today">
+            <h2>Today</h2>
+            <figure>
+                <img src="/Users/wassim/Desktop/coding dojo/JS/DojoWeather/assets/some_rain.png" alt="some rain">
+                <figcaption>some rain</figcaption>
+            </figure>
+            <div class="temp-color">
+                <div class="red"> <p class="red1 red11">24</p> <p>°</p></div>
+                <div class="blue"> <p class="blue1 blue11">18</p> <p>°</p></div>
+            </div>
+            
+        </div>
+
+        <div class="tomorrow">
+            <h2>Tomorrow</h2>
+            <figure>
+                <img src="/Users/wassim/Desktop/coding dojo/JS/DojoWeather/assets/some_sun.png" alt="some sun">
+                <figcaption>some sun</figcaption>
+            </figure>
+            <div class="temp-color">
+                <div class="red"> <p class="red1 red12">27</p> <p>°</p></div>
+                <div class="blue"> <p class="blue1 blue12">19</p> <p>°</p></div>
+            </div>
+            
+        </div>
+
+        <div class="friday">
+            <h2>Friday</h2>
+            <figure>
+                <img src="/Users/wassim/Desktop/coding dojo/JS/DojoWeather/assets/some_clouds.png" alt="some clouds">
+                <figcaption>some clouds</figcaption>
+            </figure>
+            <div class="temp-color">
+                <div class="red"> <p class="red1 red13">21</p> <p>°</p></div>
+                <div class="blue"> <p class="blue1 blue13">16</p> <p>°</p></div>
+            </div>
+        
+        </div>
+
+        <div class="saturday">
+            <h2>Saturday</h2>
+            <figure>
+                <img src="/Users/wassim/Desktop/coding dojo/JS/DojoWeather/assets/some_sun.png" alt="some sun">
+                <figcaption>some sun</figcaption>
+            </figure>
+            <div class="temp-color">
+                <div class="red"> <p class="red1 red14">26</p> <p>°</p></div>
+                <div class="blue"> <p class="blue1 blue14">21</p> <p>°</p></div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <div class="alert">
+        <img src="/Users/wassim/Desktop/coding dojo/JS/DojoWeather/assets/cookie.png" alt="cookies">
+        <div class="text-alert">
+            <h2>Stop!Cookie Time</h2>
+            <p>We use cookies(sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a> </p>
+        </div>
+        <button onclick="removealert()">I Accept</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
